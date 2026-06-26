@@ -36,10 +36,6 @@ func main() {
 	if port == "" {
 		log.Fatal("PORT environment variable is not set")
 	}
-	portNum, err := strconv.Atoi(port)
-	if err != nil {
-		log.Fatal("PORT environment variable must be numeric")
-	}
 
 	apiCfg := apiConfig{}
 
@@ -100,6 +96,6 @@ func main() {
 		ReadHeaderTimeout: 5 * time.Second,
 	}
 
-	log.Printf("Serving on port: %d\n", portNum)
+	log.Printf("Serving on port: %s\n", strconv.Quote(port))
 	log.Fatal(srv.ListenAndServe())
 }
