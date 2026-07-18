@@ -24,4 +24,8 @@ go build -o notely && ./notely
 
 You do *not* need to set up a database or any interactivity on the webpage yet. Instructions for that will come later in the course!
 
-Alex' version of Boot.dev's Notely app.
+## About This Repo
+
+This repo was forked from Boot.dev's starter code for the [Learn CI/CD with GitHub Actions, Docker and Go](https://www.boot.dev/courses/learn-ci-cd-github-docker-golang) course. It's used here to build out and practice a full CI/CD pipeline: testing, linting, security scanning, Docker builds, and deployment to Google Cloud Run with a Turso database.
+
+Most of the course content and lesson-by-lesson instructions are captured in [COURSE_NOTES.md](./COURSE_NOTES.md), kept for future reference when revisiting this repo.
